@@ -17,7 +17,7 @@ The program will ask for a prompt, send it to openAI, get the response, and prin
 import openai
 
 # Set up the OpenAI API client
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY"
 
 # test for an API key
 if openai.api_key=="YOUR_API_KEY":
