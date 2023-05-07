@@ -1,0 +1,26 @@
+<h1>Movie Recommendations for <%= user.username %></h1>
+
+<div class="row">
+  <div class="col">
+    <p>Enter your preferred movie genre to get recommendations!</p>
+
+    <form method="post" action="/recommendations">
+        Genre:
+        <input type="text" name="genre" required />
+        <br />
+        <input type="submit" value="Get Recommendations" />
+      </form>
+  </div>
+  <div class="col">
+    <% if (genre) { %>
+      <h2>Top 5 <%= genre %> Movie Recommendations:</h2>
+      <ul class="list-group">
+        <% recommendations.forEach((recommendation, index) => { %>
+          <li class="list-group-item">
+            <%= index + 1 %>. <%= recommendation %>
+          </li>
+        <% }) %>
+      </ul>
+    <% } %>
+  </div>
+</div>
