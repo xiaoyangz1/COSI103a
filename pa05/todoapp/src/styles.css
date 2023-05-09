@@ -2,3 +2,20 @@
   font-family: sans-serif;
   text-align: start;
 }
+
+.transaction-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.transaction-table th,
+.transaction-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.transaction-table th {
+  background-color: #f2f2f2;
+}
+
